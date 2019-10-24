@@ -18,21 +18,23 @@ public class AirportJoinApp {
         job.setJarByClass(AirportJoinApp.class);
         job.setJobName("AirportJoinApp count");
 
-//        //Переделать
-//        FileInputFormat.addInputPath(job, new Path(args[0]));
-//        FileInputFormat.addInputPath(job, new Path(args[1]));
-        
+
+//        MultipleInputs.addInputPath(job, new Path(args[0]), TextInputFormat.class, CallsJoinMapper.class);
+//        MultipleInputs.addInputPath(job, new Path(args[1]), TextInputFormat.class, SystemsJoinMapper.class);
 
         FileOutputFormat.setOutputPath(job, new Path(args[2]));
 
 //        job.setMapperClass(WordMapper.class); //Mapper
 //        job.setReducerClass(WordReducer.class); //Reducer
 
+//        job.setPartitionerClass(TextPair.FirstPartitioner.class);
+//        job.setGroupingComparatorClass(TextPair.FirstComparator.class);
+//        job.setReducerClass(JoinReducer.class);
+//        job.setMapOutputKeyClass(TextPair.class);
+
         job.setOutputKeyClass(Text.class);
-        job.setOutputValueClass(IntWritable.class);
-
+        job.setOutputValueClass(Text.class);
         job.setNumReduceTasks(2);
-
         System.exit(job.waitForCompletion(true) ? 0 : 1);
     }
 }
