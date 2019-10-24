@@ -11,7 +11,7 @@ public class testClass {
         //Default seperator is comma
         //Default quote character is double quote
         //Start reading from line number 2 (line numbers start from zero)
-        CSVReader reader = new CSVReader(new FileReader("L_AIRPORT_ID.csv"), ',' , '"' , 1);
+        CSVReader reader = new CSVReader(new FileReader("664600583_T_ONTIME_sample.csv"), ',' , '"' , 1);
         //Read CSV line by line and use the string array as you want
         String[] nextLine;
         while ((nextLine = reader.readNext()) != null) {
