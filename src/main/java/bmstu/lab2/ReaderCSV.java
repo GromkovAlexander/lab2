@@ -14,8 +14,8 @@ public class ReaderCSV {
 
 
     public ReaderCSV(Text input)  {
-        String help = input.toString();
-        String[] lines = help.split("\n");
+        String text = input.toString();
+        String[] lines = text.split("\n");
         table = new ArrayList<>(lines.length);
 
         for (String line : lines) {
@@ -57,11 +57,8 @@ public class ReaderCSV {
                     column.add(line.substring(i, j));
                     i = j - 1;
                 }
-
-
             }
         }
-
     }
 
 
