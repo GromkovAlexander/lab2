@@ -8,7 +8,8 @@ public class testClass {
     public static void main(String[] args) throws Exception {
 
         //664600583_T_ONTIME_sample.csv
-        CSVReader reader = new CSVReader(new FileReader("L_AIRPORT_ID.csv"), ',' , '"' , 1);
+        //L_AIRPORT_ID.csv
+        CSVReader reader = new CSVReader(new FileReader("664600583_T_ONTIME_sample.csv"), ',' , '"' , 1);
 
         String[] nextLine;
         int count = 0;
