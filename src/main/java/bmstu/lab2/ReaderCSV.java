@@ -1,10 +1,5 @@
 package bmstu.lab2;
 
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.util.Arrays;
-import au.com.bytecode.opencsv.CSVReader;
-
 import org.apache.hadoop.io.Text;
 
 import java.util.ArrayList;
@@ -55,7 +50,12 @@ public class ReaderCSV {
                 }
 
                 if (line.charAt(i) != SPACE) {
-                    
+                    int j = i;
+                    while (line.charAt(j) != QUOTES && line.charAt(j) != COMMA) {
+                        j++;
+                    }
+                    column.add(line.substring(i, j));
+                    i = j - 1;
                 }
 
 
