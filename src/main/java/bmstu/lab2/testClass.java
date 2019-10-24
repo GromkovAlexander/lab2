@@ -15,7 +15,7 @@ public class testClass {
         //Read CSV line by line and use the string array as you want
         String[] nextLine;
         int count = 0;
-        while ((nextLine = reader.readNext()) != null || count <= 100) {
+        while ((nextLine = reader.readNext()) != null || count <= 10) {
             if (nextLine != null) {
                 //Verifying the read data here
                 System.out.println(Arrays.toString(nextLine));
