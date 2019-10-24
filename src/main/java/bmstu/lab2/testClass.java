@@ -14,11 +14,13 @@ public class testClass {
         CSVReader reader = new CSVReader(new FileReader("664600583_T_ONTIME_sample.csv"), ',' , '"' , 1);
         //Read CSV line by line and use the string array as you want
         String[] nextLine;
-        while ((nextLine = reader.readNext()) != null) {
+        int count = 0;
+        while ((nextLine = reader.readNext()) != null || count <= 100) {
             if (nextLine != null) {
                 //Verifying the read data here
                 System.out.println(Arrays.toString(nextLine));
             }
+            count++;
         }
     }
 }
