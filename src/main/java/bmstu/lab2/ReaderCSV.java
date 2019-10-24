@@ -15,6 +15,7 @@ public class ReaderCSV {
 
     private static final char QUOTES = '"';
     private static final char COMMA = ',';
+    private static final char SPACE = ' ';
 
 
     public ReaderCSV(Text input)  {
@@ -26,6 +27,7 @@ public class ReaderCSV {
             ArrayList<String> column = new ArrayList<>();
             table.add(column);
             for (int i = 0; i < line.length(); i++) {
+
                 if (line.charAt(i) == QUOTES) {
                     if (i + 1 < line.length()) {
                         continue;
@@ -47,8 +49,16 @@ public class ReaderCSV {
                     while (j < line.length() && line.charAt(j) != COMMA) {
                         j++;
                     }
-                    column.add(line.substring(i + 1, j);
+                    column.add(line.substring(i + 1, j));
+                    i = j - 1;
+                    continue;
                 }
+
+                if (line.charAt(i) != SPACE) {
+                    
+                }
+
+
             }
         }
 
