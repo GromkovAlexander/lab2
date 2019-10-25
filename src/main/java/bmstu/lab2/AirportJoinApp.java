@@ -25,11 +25,8 @@ public class AirportJoinApp {
 
         FileOutputFormat.setOutputPath(job, new Path(args[2]));
 
-//        job.setMapperClass(WordMapper.class); //Mapper
-//        job.setReducerClass(WordReducer.class); //Reducer
-
         job.setPartitionerClass(HashPartitioner.class);
-//        job.setGroupingComparatorClass(TextPair.FirstComparator.class);
+        job.setGroupingComparatorClass(KeyComparator.class);
 //        job.setReducerClass(JoinReducer.class);
         job.setMapOutputKeyClass(AirportIndicator.class);
 

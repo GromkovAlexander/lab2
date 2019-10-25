@@ -42,12 +42,15 @@ public class AirportIndicator implements WritableComparable<AirportIndicator> {
         } else {
             return Integer.compare(this.indicator, o.indicator);
         }
-
     }
 
     @Override
     public int hashCode() {
         return Objects.hash(this.key, this.indicator);
+    }
+
+    public int compareKeys(AirportIndicator o) {
+        return Integer.compare(this.key, o.key);
     }
 
     public int getKey() {
