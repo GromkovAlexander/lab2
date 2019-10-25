@@ -48,7 +48,7 @@ public class FlightsReducer extends Reducer<AirportIndicator, Text, IntWritable,
         if (count > 0) {
             float averageDelay = sum / count;
             Text out = new Text(firstOutPart + " Minimum delay: " + min + " Maximum delay: " + max + " Average delay: " + averageDelay )
-            context.write();
+            context.write(key.getKey(), out);
         }
 
 
