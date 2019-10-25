@@ -24,7 +24,11 @@ public class MapFlights extends Mapper<LongWritable, Text, AirportIndicator, Tex
                     Integer.parseInt(table.getTableValueRowColumn(i, COLUMN_AIRPORT_CODE)),
                     FLIGHTS_INDICATOR
             );
+
             String delay = table.getTableValueRowColumn(i, COLUMN_AIRPORT_DELAY);
+
+            if 
+
 
 //            context.write(airportKeyIndicator, delay);
         }
