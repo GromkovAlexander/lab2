@@ -20,17 +20,22 @@ public class MapFlights extends Mapper<LongWritable, Text, AirportIndicator, Tex
         ReaderCSV table = new ReaderCSV(value);
 
         for (int i = 0; i < table.getSize(); i++) {
-            AirportIndicator airportKeyIndicator = new AirportIndicator(
-                    Integer.parseInt(table.getTableValueRowColumn(i, COLUMN_AIRPORT_CODE)),
-                    FLIGHTS_INDICATOR
-            );
+            try {
+                AirportIndicator airportKeyIndicator = new AirportIndicator(
+                        Integer.parseInt(table.getTableValueRowColumn(i, COLUMN_AIRPORT_CODE)),
+                        FLIGHTS_INDICATOR
+                );
 
-            String delayString = table.getTableValueRowColumn(i, COLUMN_AIRPORT_DELAY);
+                String delayString = table.getTableValueRowColumn(i, COLUMN_AIRPORT_DELAY);
 
-            if (delayString.length() > 0) {
-                Text delayText = new Text(delayString);
-                context.write(airportKeyIndicator, delayText);
+                if (delayString.length() > 0) {
+                    Text delayText = new Text(delayString);
+                    context.write(airportKeyIndicator, delayText);
+                }
+            } catch (NumberFormatException ex) {
+                //Строка с заголовками
             }
+
 
         }
 
