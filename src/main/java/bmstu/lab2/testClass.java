@@ -24,7 +24,7 @@ public class testClass {
 //            }
 //            count++;
 //        }
-        String s1 = "10001" + "," + "Afognak Lake, AK: Afognak Lake Airport";
+        String s1 = "\"10001\",Afognak Lake, AK: Afognak Lake Airport";
         String s2 =  "10003" + "," + "Granite Mountain, AK: Bear Creek Mining Strip";
         String s3 =  "10004" + "," + "Lik, AK: Lik Mining Camp";
         String s4 =  "10005" + "," + "Little Squaw, AK: Little Squaw Airport";
