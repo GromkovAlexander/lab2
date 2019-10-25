@@ -13,7 +13,7 @@ public class FlightsReducer extends Reducer<AirportIndicator, Text, IntWritable,
 
     @Override
     protected void reduce(AirportIndicator key, Iterable<Text> values, Context context) throws IOException, InterruptedException {
-        
+
         float min = Float.MAX_VALUE;
         float max = Float.MIN_VALUE;
         float sum = 0;
@@ -39,7 +39,7 @@ public class FlightsReducer extends Reducer<AirportIndicator, Text, IntWritable,
 
         if (count > 0) {
             float averageDelay = sum / count;
-            Text out = new Text(firstOutPart + " Minimum delay: " + min + " Maximum delay: " + max + " Average delay: " + averageDelay )
+            Text out = new Text(firstOutPart + " Minimum delay: " + min + " Maximum delay: " + max + " Average delay: " + averageDelay);
             context.write(new IntWritable(key.getKey()), out);
         }
 
