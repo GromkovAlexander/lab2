@@ -22,10 +22,32 @@ public class FlightsReducer extends Reducer<AirportIndicator, Text, IntWritable,
 //            context.write(key.getFirst(), outValue);
 //        }
 
+        float min = Float.MAX_VALUE;
+        float max = Float.MIN_VALUE;
+        float sum = 0;
+        float count = 0;
+
         Iterator<Text> iter = values.iterator();
-        Text delay = new Text(iter.next());
+        String firstOutPart
 
         while (iter.hasNext()) {
+            float delay = Float.parseFloat(iter.next().toString());
+
+            if (delay < min) {
+                min = delay;
+            }
+
+            if (delay > max) {
+                max = delay;
+            }
+
+            sum += delay;
+            count++;
+        }
+
+        if (count > 0) {
+            float averageDelay = sum / count;
+            Text out = new Text()
 
         }
 
