@@ -14,12 +14,21 @@ public class FlightsReducer extends Reducer<AirportIndicator, Text, IntWritable,
     @Override
     protected void reduce(AirportIndicator key, Iterable<Text> values, Context context) throws IOException, InterruptedException {
 
+//        Iterator<Text> iter = values.iterator();
+//        Text systemInfo = new Text(iter.next());
+//        while (iter.hasNext()) {
+//            Text call = iter.next();
+//            Text outValue = new Text(call.toString() + "\t" + systemInfo.toString());
+//            context.write(key.getFirst(), outValue);
+//        }
+
         Iterator<Text> iter = values.iterator();
-        Text systemInfo = new Text(iter.next());
+        Text delay = new Text(iter.next());
+
         while (iter.hasNext()) {
-            Text call = iter.next();
-            Text outValue = new Text(call.toString() + "\t" + systemInfo.toString());
-            context.write(key.getFirst(), outValue);
+
         }
+
+
     }
 }
