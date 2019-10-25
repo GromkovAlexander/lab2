@@ -24,9 +24,6 @@ public class ReaderCSV {
             for (int i = 0; i < line.length(); i++) {
 
                 if (line.charAt(i) == QUOTES) {
-                    if (i + 1 < line.length()) {
-                        continue;
-                    }
                     int j = i + 1;
                     while (j < line.length() && line.charAt(j) != QUOTES) {
                         j++;
@@ -37,7 +34,7 @@ public class ReaderCSV {
                 }
 
                 if (line.charAt(i) == COMMA) {
-                    if (i + 1 < line.length()) {
+                    if (i + 1 < line.length() && line.charAt(i + 1) == QUOTES) {
                         continue;
                     }
                     int j = i + 1;
