@@ -20,5 +20,6 @@ public class testClass {
             }
             count++;
         }
+        //test auto-commit
     }
 }
