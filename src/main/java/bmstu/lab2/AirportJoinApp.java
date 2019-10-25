@@ -25,7 +25,7 @@ public class AirportJoinApp {
 
         job.setPartitionerClass(HashPartitioner.class);
         job.setGroupingComparatorClass(KeysComparator.class);
-//        job.setReducerClass(JoinReducer.class);
+        job.setReducerClass(FlightsReducer.class);
         job.setMapOutputKeyClass(AirportIndicator.class);
 
         job.setOutputKeyClass(Text.class);
