@@ -2,6 +2,7 @@ package bmstu.lab2;
 
 
 import org.apache.hadoop.io.Text;
+import org.apache.hadoop.mapreduce.Partitioner;
 
 public class Partitioner<K, V> extends Partitioner<AirportIndicator, Text> {
     public int getPartition(K key, V value, int numReduceTasks) {
