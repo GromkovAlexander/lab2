@@ -1,13 +1,11 @@
 package bmstu.lab2;
 
-
-import org.apache.hadoop.io.IntWritable;
 import org.apache.hadoop.io.LongWritable;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Mapper;
 
 import java.io.IOException;
-import java.util.StringTokenizer;
+
 
 public class MapAirports extends Mapper<LongWritable, Text, AirportIndicator, Text> {
 
@@ -31,11 +29,6 @@ public class MapAirports extends Mapper<LongWritable, Text, AirportIndicator, Te
 
             context.write(airportKey, airportName);
         }
-
-
-
-
-
 
     }
 }
