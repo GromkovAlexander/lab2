@@ -8,7 +8,7 @@ import java.io.IOException;
 
 public class MapFlights extends Mapper<LongWritable, Text, AirportIndicator, Text> {
 
-    private static final int AIRPORT_INDICATOR = 0;
+    private static final int FLIGHTS_INDICATOR = 1;
 
     private static final int COLUMN_AIRPORT_CODE = 0;
     private static final int COLUMN_AIRPORT_DESCRIPTION = 1;
@@ -22,7 +22,7 @@ public class MapFlights extends Mapper<LongWritable, Text, AirportIndicator, Tex
         for (int i = 0; i < table.getSize(); i++) {
             AirportIndicator airportKey = new AirportIndicator(
                     Integer.parseInt(table.getTableValueRowColumn(i, COLUMN_AIRPORT_CODE)),
-                    AIRPORT_INDICATOR
+                    FLIGHTS_INDICATOR
             );
             Text airportName = new Text(table.getTableValueRowColumn(i, COLUMN_AIRPORT_DESCRIPTION));
 
