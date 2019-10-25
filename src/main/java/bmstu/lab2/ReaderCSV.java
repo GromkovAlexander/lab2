@@ -7,6 +7,7 @@ import java.util.ArrayList;
 
 public class ReaderCSV {
     private ArrayList<ArrayList<String>> table;
+    private int size;
 
     private static final char QUOTES = '"';
     private static final char COMMA = ',';
@@ -17,6 +18,7 @@ public class ReaderCSV {
         String text = input.toString();
         String[] lines = text.split("\n");
         table = new ArrayList<>(lines.length);
+        this.size = lines.length;
 
         for (String line : lines) {
             ArrayList<String> column = new ArrayList<>();
@@ -58,6 +60,11 @@ public class ReaderCSV {
         }
     }
 
+    public String getTableValueRowColumn(int row, int column) {
+        return table.get(row).get(column);
+    }
 
-
+    public int getSize() {
+        return size;
+    }
 }
