@@ -25,12 +25,13 @@ public class MapFlights extends Mapper<LongWritable, Text, AirportIndicator, Tex
                     FLIGHTS_INDICATOR
             );
 
-            String delay = table.getTableValueRowColumn(i, COLUMN_AIRPORT_DELAY);
+            String delayString = table.getTableValueRowColumn(i, COLUMN_AIRPORT_DELAY);
 
-            if 
+            if (delayString.length() > 0) {
+                Text delayText = new Text(delayString);
+                context.write(airportKeyIndicator, delayText);
+            }
 
-
-//            context.write(airportKeyIndicator, delay);
         }
 
     }
