@@ -24,10 +24,10 @@ public class testClass {
 //            }
 //            count++;
 //        }
+        String s1 = "10001" + "," + "Afognak Lake, AK: Afognak Lake Airport";
+        Text text = new Text(s1);
 
-        Text text = 
-
-        ReaderCSV check = new ReaderCSV();
+        ReaderCSV check = new ReaderCSV(text);
 
 
     }
