@@ -5,13 +5,10 @@ import org.apache.hadoop.io.WritableComparable;
 import java.io.DataInput;
 import java.io.DataOutput;
 import java.io.IOException;
+import java.util.Objects;
 
 
-public class AirportIndicator implements WritableComparable {
-//    // Some data
-//    private int counter;
-//    private long timestamp;
-//    private int value;
+public class AirportIndicator implements WritableComparable<AirportIndicator> {
 
     private int key;
     private int indicator;
@@ -28,29 +25,44 @@ public class AirportIndicator implements WritableComparable {
 
     @Override
     public void write(DataOutput out) throws IOException {
-//        out.writeInt(counter);
-//        out.writeLong(timestamp);
+        out.writeInt(this.key);
+        out.writeInt(this.indicator);
     }
 
     @Override
     public void readFields(DataInput in) throws IOException {
-//        counter = in.readInt();
-//        timestamp = in.readLong();
+        this.key = in.readInt();
+        this.indicator = in.readInt();
     }
 
     @Override
     public int compareTo(AirportIndicator o) {
-//        int thisValue = this.value;
-//        int thatValue = o.value;
-//        return (thisValue < thatValue ? -1 : (thisValue==thatValue ? 0 : 1));
+        if (Integer.compare(this.key, o.key) != 0) {
+            return Integer.compare(this.key, o.key);
+        } else {
+            return Integer.compare(this.indicator, o.indicator);
+        }
+
     }
 
     @Override
     public int hashCode() {
-//        final int prime = 31;
-//        int result = 1;
-//        result = prime * result + counter;
-//        result = prime * result + (int) (timestamp ^ (timestamp >>> 32));
-//        return result;
+        return Objects.hash(this.key, this.indicator);
+    }
+
+    public int getKey() {
+        return key;
+    }
+
+    public void setKey(int key) {
+        this.key = key;
+    }
+
+    public int getIndicator() {
+        return indicator;
+    }
+
+    public void setIndicator(int indicator) {
+        this.indicator = indicator;
     }
 }

@@ -1,4 +1,4 @@
 package bmstu.lab2;
 
-public class MapAirport {
+public class MapAirports {
 }
