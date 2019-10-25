@@ -21,8 +21,8 @@ public class ReaderCSV {
         this.size = lines.length;
 
         for (String line : lines) {
-            ArrayList<String> column = new ArrayList<>();
-            table.add(column);
+            ArrayList<String> columns = new ArrayList<>();
+            table.add(columns);
             for (int i = 0; i < line.length(); i++) {
 
                 if (line.charAt(i) == QUOTES) {
@@ -30,7 +30,7 @@ public class ReaderCSV {
                     while (j < line.length() && line.charAt(j) != QUOTES) {
                         j++;
                     }
-                    column.add(line.substring(i + 1, j));
+                    columns.add(line.substring(i + 1, j));
                     i = j;
                     continue;
                 }
@@ -43,7 +43,7 @@ public class ReaderCSV {
                     while (j < line.length() && line.charAt(j) != COMMA) {
                         j++;
                     }
-                    column.add(line.substring(i + 1, j));
+                    columns.add(line.substring(i + 1, j));
                     i = j - 1;
                     continue;
                 }
@@ -53,7 +53,7 @@ public class ReaderCSV {
                     while (line.charAt(j) != QUOTES && line.charAt(j) != COMMA) {
                         j++;
                     }
-                    column.add(line.substring(i, j));
+                    columns.add(line.substring(i, j));
                     i = j - 1;
                 }
             }
