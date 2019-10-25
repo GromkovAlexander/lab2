@@ -4,9 +4,9 @@ import org.apache.hadoop.io.WritableComparable;
 import org.apache.hadoop.io.WritableComparator;
 
 
-public class KeyComparator extends WritableComparator {
+public class KeysComparator extends WritableComparator {
 
-    public KeyComparator() {
+    public KeysComparator() {
         super(AirportIndicator.class, true);
     }
 

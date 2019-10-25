@@ -2,10 +2,14 @@ package bmstu.lab2;
 
 
 import org.apache.hadoop.io.Text;
+import org.apache.hadoop.mapred.MapOutputCollector;
 
-public class Reducer extends Reducer<AirportIndicator, Text, Text, Text> {
+import java.io.IOException;
+import java.util.Iterator;
+
+public class FlightsReducer extends FlightsReducer<AirportIndicator, Text, Text, Text> {
     @Override
-    protected void reduce(AirportIndicator key, Iterable<Text> values, Context context) throws
+    protected void reduce(AirportIndicator key, Iterable<Text> values, MapOutputCollector.Context context) throws
             IOException, InterruptedException {
         Iterator<Text> iter = values.iterator();
         Text systemInfo = new Text(iter.next());
