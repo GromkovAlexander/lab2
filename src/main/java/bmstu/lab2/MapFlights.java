@@ -10,8 +10,8 @@ public class MapFlights extends Mapper<LongWritable, Text, AirportIndicator, Tex
 
     private static final int FLIGHTS_INDICATOR = 1;
 
-    private static final int COLUMN_AIRPORT_CODE = 0;
-    private static final int COLUMN_AIRPORT_DESCRIPTION = 1;
+    private static final int COLUMN_AIRPORT_CODE = 14;
+    private static final int COLUMN_AIRPORT_DELAY = 17;
 
 
     @Override
@@ -24,7 +24,7 @@ public class MapFlights extends Mapper<LongWritable, Text, AirportIndicator, Tex
                     Integer.parseInt(table.getTableValueRowColumn(i, COLUMN_AIRPORT_CODE)),
                     FLIGHTS_INDICATOR
             );
-            Text airportName = new Text(table.getTableValueRowColumn(i, COLUMN_AIRPORT_DESCRIPTION));
+            Text airportName = new Text(table.getTableValueRowColumn(i, COLUMN_AIRPORT_DELAY));
 
             context.write(airportKey, airportName);
         }
