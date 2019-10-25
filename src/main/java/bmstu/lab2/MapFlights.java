@@ -20,13 +20,13 @@ public class MapFlights extends Mapper<LongWritable, Text, AirportIndicator, Tex
         ReaderCSV table = new ReaderCSV(value);
 
         for (int i = 0; i < table.getSize(); i++) {
-            AirportIndicator airportKey = new AirportIndicator(
+            AirportIndicator airportKeyIndicator = new AirportIndicator(
                     Integer.parseInt(table.getTableValueRowColumn(i, COLUMN_AIRPORT_CODE)),
                     FLIGHTS_INDICATOR
             );
-            Text airportName = new Text(table.getTableValueRowColumn(i, COLUMN_AIRPORT_DELAY));
+            String delay = table.getTableValueRowColumn(i, COLUMN_AIRPORT_DELAY);
 
-            context.write(airportKey, airportName);
+//            context.write(airportKeyIndicator, delay);
         }
 
     }

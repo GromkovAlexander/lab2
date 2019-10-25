@@ -21,13 +21,13 @@ public class MapAirports extends Mapper<LongWritable, Text, AirportIndicator, Te
         ReaderCSV table = new ReaderCSV(value);
 
         for (int i = 0; i < table.getSize(); i++) {
-            AirportIndicator airportKey = new AirportIndicator(
+            AirportIndicator airportKeyIndicator = new AirportIndicator(
                     Integer.parseInt(table.getTableValueRowColumn(i, COLUMN_AIRPORT_CODE)),
                     AIRPORT_INDICATOR
             );
             Text airportName = new Text(table.getTableValueRowColumn(i, COLUMN_AIRPORT_DESCRIPTION));
 
-            context.write(airportKey, airportName);
+            context.write(airportKeyIndicator, airportName);
         }
 
     }
