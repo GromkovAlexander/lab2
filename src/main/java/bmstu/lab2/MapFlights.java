@@ -13,7 +13,14 @@ public class MapFlights extends Mapper<LongWritable, Text, AirportIndicator, Tex
     private static final int COLUMN_AIRPORT_CODE = 14;
     private static final int COLUMN_AIRPORT_DELAY = 17;
 
-    private static final String TITLE = "Code,Description";
+    private static final String TITLE="\"YEAR\",\"QUARTER\"," +
+            "\"MONTH\",\"DAY_OF_MONTH\",\"DAY_OF_WEEK\"," +
+            "\"FL_DATE\",\"UNIQUE_CARRIER\",\"AIRLINE_ID\"," +
+            "\"CARRIER\",\"TAIL_NUM\",\"FL_NUM\",\"ORIGIN_AIRPORT_ID\"," +
+            "\"ORIGIN_AIRPORT_SEQ_ID\",\"ORIGIN_CITY_MARKET_ID\",\"DEST_AIRPORT_ID\"," +
+            "\"WHEELS_ON\",\"ARR_TIME\",\"ARR_DELAY\",\"ARR_DELAY_NEW\",\"CANCELLED\"," +
+            "\"CANCELLATION_CODE\",\"AIR_TIME\",\"DISTANCE\",";
+
 
 
     @Override
