@@ -35,5 +35,7 @@ public class MapAirports extends Mapper<LongWritable, Text, AirportIndicator, Te
 
         }
 
+        System.out.println();
+
     }
 }
