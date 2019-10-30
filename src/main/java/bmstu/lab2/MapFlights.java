@@ -13,6 +13,8 @@ public class MapFlights extends Mapper<LongWritable, Text, AirportIndicator, Tex
     private static final int COLUMN_AIRPORT_CODE = 14;
     private static final int COLUMN_AIRPORT_DELAY = 17;
 
+    private static final String TITLE = "Code,Description";
+
 
     @Override
     protected void map(LongWritable key, Text value, Context context) throws IOException, InterruptedException {
@@ -20,25 +22,21 @@ public class MapFlights extends Mapper<LongWritable, Text, AirportIndicator, Tex
         ParserLineCSV table = new ParserLineCSV();
         table.lineBreak(value);
 
-        for (int i = 0; i < table.getSize(); i++) {
-            try {
-                AirportIndicator airportKeyIndicator = new AirportIndicator(
-                        Integer.parseInt(table.getTableValu(i, COLUMN_AIRPORT_CODE)),
-                        FLIGHTS_INDICATOR
-                );
+        if (!value.toString().equals(TITLE)) {
+            AirportIndicator airportKeyIndicator = new AirportIndicator(
+                    Integer.parseInt(table.getTableValue(COLUMN_AIRPORT_CODE)),
+                    FLIGHTS_INDICATOR
+            );
 
-                String delayString = table.getTableValue(i, COLUMN_AIRPORT_DELAY);
+            String delayString = table.getTableValue(COLUMN_AIRPORT_DELAY);
 
-                if (delayString.length() > 0) {
-                    Text delayText = new Text(delayString);
-                    context.write(airportKeyIndicator, delayText);
-                }
-            } catch (NumberFormatException ex) {
-                //Строка с заголовками
+            if (delayString.length() > 0) {
+                Text delayText = new Text(delayString);
+                context.write(airportKeyIndicator, delayText);
             }
-
-
         }
+
+
 
     }
 }
