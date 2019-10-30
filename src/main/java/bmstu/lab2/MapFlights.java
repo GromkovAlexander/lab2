@@ -17,16 +17,17 @@ public class MapFlights extends Mapper<LongWritable, Text, AirportIndicator, Tex
     @Override
     protected void map(LongWritable key, Text value, Context context) throws IOException, InterruptedException {
 
-        ReaderCSV table = new ReaderCSV(value);
+        ParserLineCSV table = new ParserLineCSV();
+        table.lineBreak(value);
 
         for (int i = 0; i < table.getSize(); i++) {
             try {
                 AirportIndicator airportKeyIndicator = new AirportIndicator(
-                        Integer.parseInt(table.getTableValueRowColumn(i, COLUMN_AIRPORT_CODE)),
+                        Integer.parseInt(table.getTableValu(i, COLUMN_AIRPORT_CODE)),
                         FLIGHTS_INDICATOR
                 );
 
-                String delayString = table.getTableValueRowColumn(i, COLUMN_AIRPORT_DELAY);
+                String delayString = table.getTableValue(i, COLUMN_AIRPORT_DELAY);
 
                 if (delayString.length() > 0) {
                     Text delayText = new Text(delayString);

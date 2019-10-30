@@ -14,28 +14,26 @@ public class MapAirports extends Mapper<LongWritable, Text, AirportIndicator, Te
     private static final int COLUMN_AIRPORT_CODE = 0;
     private static final int COLUMN_AIRPORT_DESCRIPTION = 1;
 
+    private static final String TITLE = "Code,Description";
 
     @Override
     protected void map(LongWritable key, Text value, Context context) throws IOException, InterruptedException {
 
-        ReaderCSV table = new ReaderCSV(value);
+        ParserLineCSV table = new ParserLineCSV();
+        table.lineBreak(value);
 
-        for (int i = 0; i < table.getSize(); i++) {
-            try {
-                AirportIndicator airportKeyIndicator = new AirportIndicator(
-                        Integer.parseInt(table.getTableValueRowColumn(i, COLUMN_AIRPORT_CODE)),
-                        AIRPORT_INDICATOR
-                );
-                Text airportName = new Text(table.getTableValueRowColumn(i, COLUMN_AIRPORT_DESCRIPTION));
+        if (!value.toString().equals(TITLE)) {
+            AirportIndicator airportKeyIndicator = new AirportIndicator(
+                    Integer.parseInt(table.getTableValue(COLUMN_AIRPORT_CODE)),
+                    AIRPORT_INDICATOR
+            );
+            Text airportName = new Text(table.getTableValue(COLUMN_AIRPORT_DESCRIPTION));
 
-                context.write(airportKeyIndicator, airportName);
-            } catch (NumberFormatException ex) {
-                //Строка с заголовками
-            }
-
+            context.write(airportKeyIndicator, airportName);
         }
 
-        System.out.println();
+
+
 
     }
 }
