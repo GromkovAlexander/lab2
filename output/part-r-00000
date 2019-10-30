@@ -1,0 +1,146 @@
+10136	Abilene, TX: Abilene Regional Minimum delay: -13.0 Maximum delay: 76.0 Average delay: 5.347826
+10140	Albuquerque, NM: Albuquerque International Sunport Minimum delay: -34.0 Maximum delay: 126.0 Average delay: 2.25
+10146	Albany, GA: Southwest Georgia Regional Minimum delay: -19.0 Maximum delay: 34.0 Average delay: 8.375
+10158	Atlantic City, NJ: Atlantic City International Minimum delay: -16.0 Maximum delay: 147.0 Average delay: 20.516129
+10170	Kodiak, AK: Kodiak Airport Minimum delay: -11.0 Maximum delay: 76.0 Average delay: 39.666668
+10208	Augusta, GA: Augusta Regional at Bush Field Minimum delay: -12.0 Maximum delay: 246.0 Average delay: 8.1
+10268	Waterloo, IA: Waterloo Regional Minimum delay: 2.0 Maximum delay: 223.0 Average delay: 78.8
+10372	Aspen, CO: Aspen Pitkin County Sardy Field Minimum delay: -27.0 Maximum delay: 136.0 Average delay: 16.919355
+10408	Appleton, WI: Outagamie County Regional Minimum delay: -30.0 Maximum delay: 146.0 Average delay: 7.24
+10434	Scranton/Wilkes-Barre, PA: Wilkes Barre Scranton International Minimum delay: -11.0 Maximum delay: 20.0 Average delay: 2.1
+10620	Billings, MT: Billings Logan International Minimum delay: -24.0 Maximum delay: 58.0 Average delay: 4.4
+10666	Bellingham, WA: Bellingham International Minimum delay: -34.0 Maximum delay: 20.0 Average delay: -10.8
+10728	Beaumont/Port Arthur, TX: Jack Brooks Regional Minimum delay: -15.0 Maximum delay: 36.0 Average delay: 15.75
+10732	Aguadilla, PR: Rafael Hernandez Minimum delay: -31.0 Maximum delay: 109.0 Average delay: 2.5384614
+10754	Barrow, AK: Wiley Post/Will Rogers Memorial Minimum delay: -7.0 Maximum delay: 306.0 Average delay: 39.6
+10792	Buffalo, NY: Buffalo Niagara International Minimum delay: -27.0 Maximum delay: 128.0 Average delay: 5.6355934
+10800	Burbank, CA: Bob Hope Minimum delay: -37.0 Maximum delay: 192.0 Average delay: 7.2236023
+10868	Columbia, SC: Columbia Metropolitan Minimum delay: -32.0 Maximum delay: 119.0 Average delay: 11.433962
+10874	Akron, OH: Akron-Canton Regional Minimum delay: -29.0 Maximum delay: 83.0 Average delay: -1.2769231
+10918	Cedar City, UT: Cedar City Regional Minimum delay: -5.0 Maximum delay: 15.0 Average delay: 1.2
+10926	Cordova, AK: Merle K Mudhole Smith Minimum delay: -28.0 Maximum delay: 151.0 Average delay: 3.1
+10930	Crescent City, CA: Jack McNamara Field Minimum delay: -35.0 Maximum delay: 138.0 Average delay: 20.0
+10980	Chattanooga, TN: Lovell Field Minimum delay: -21.0 Maximum delay: 124.0 Average delay: 7.413793
+10990	Charlottesville, VA: Charlottesville Albemarle Minimum delay: -17.0 Maximum delay: 173.0 Average delay: 42.894737
+10994	Charleston, SC: Charleston AFB/International Minimum delay: -21.0 Maximum delay: 198.0 Average delay: 4.3488374
+11042	Cleveland, OH: Cleveland-Hopkins International Minimum delay: -37.0 Maximum delay: 326.0 Average delay: 11.921502
+11066	Columbus, OH: Port Columbus International Minimum delay: -30.0 Maximum delay: 315.0 Average delay: 16.361809
+11076	Hancock/Houghton, MI: Houghton County Memorial Minimum delay: -6.0 Maximum delay: 69.0 Average delay: 25.833334
+11092	Moab, UT: Canyonlands Field Minimum delay: -23.0 Maximum delay: 1.4E-45 Average delay: -14.4
+11122	Casper, WY: Casper/Natrona County International Minimum delay: -31.0 Maximum delay: 98.0 Average delay: -1.1764706
+11140	Corpus Christi, TX: Corpus Christi International Minimum delay: -18.0 Maximum delay: 89.0 Average delay: 8.686275
+11146	Charleston/Dunbar, WV: Yeager Minimum delay: -18.0 Maximum delay: 20.0 Average delay: 2.5384614
+11150	Columbus, GA: Columbus Airport Minimum delay: -10.0 Maximum delay: 63.0 Average delay: 16.25
+11252	Daytona Beach, FL: Daytona Beach International Minimum delay: -16.0 Maximum delay: 49.0 Average delay: 2.1538463
+11274	Dubuque, IA: Dubuque Regional Minimum delay: -12.0 Maximum delay: 83.0 Average delay: 14.75
+11278	Washington, DC: Ronald Reagan Washington National Minimum delay: -38.0 Maximum delay: 396.0 Average delay: 4.691489
+11292	Denver, CO: Denver International Minimum delay: -47.0 Maximum delay: 420.0 Average delay: 7.9695373
+11298	Dallas/Fort Worth, TX: Dallas/Fort Worth International Minimum delay: -60.0 Maximum delay: 1201.0 Average delay: 10.804987
+11308	Dothan, AL: Dothan Regional Minimum delay: -15.0 Maximum delay: 91.0 Average delay: 15.181818
+11540	El Paso, TX: El Paso International Minimum delay: -23.0 Maximum delay: 140.0 Average delay: 7.85567
+11612	Evansville, IN: Evansville Regional Minimum delay: -23.0 Maximum delay: 101.0 Average delay: 10.137931
+11618	Newark, NJ: Newark Liberty International Minimum delay: -48.0 Maximum delay: 557.0 Average delay: 8.595663
+11624	Key West, FL: Key West International Minimum delay: -22.0 Maximum delay: 3.0 Average delay: -10.695652
+11630	Fairbanks, AK: Fairbanks International Minimum delay: -31.0 Maximum delay: 38.0 Average delay: -8.375
+11638	Fresno, CA: Fresno Yosemite International Minimum delay: -24.0 Maximum delay: 82.0 Average delay: 8.969231
+11648	Kalispell, MT: Glacier Park International Minimum delay: -36.0 Maximum delay: 77.0 Average delay: 12.166667
+11778	Fort Smith, AR: Fort Smith Regional Minimum delay: -18.0 Maximum delay: 93.0 Average delay: 2.7894738
+11884	Spokane, WA: Spokane International Minimum delay: -23.0 Maximum delay: 117.0 Average delay: 0.65753424
+11898	Grand Forks, ND: Grand Forks International Minimum delay: -17.0 Maximum delay: 7.0 Average delay: -3.5
+11980	Grand Island, NE: Central Nebraska Regional Minimum delay: -9.0 Maximum delay: 38.0 Average delay: 8.166667
+11982	Killeen, TX: Robert Gray AAF Minimum delay: -18.0 Maximum delay: 148.0 Average delay: 8.052631
+11986	Grand Rapids, MI: Gerald R. Ford International Minimum delay: -29.0 Maximum delay: 313.0 Average delay: 14.348214
+11996	Greer, SC: Greenville-Spartanburg International Minimum delay: -28.0 Maximum delay: 149.0 Average delay: 11.679245
+12012	Gunnison, CO: Gunnison-Crested Butte Regional Minimum delay: -17.0 Maximum delay: 154.0 Average delay: 31.4
+12016	Guam, TT: Guam International Minimum delay: 4.0 Maximum delay: 22.0 Average delay: 13.0
+12094	Hayden, CO: Yampa Valley Minimum delay: -23.0 Maximum delay: 48.0 Average delay: 3.7058823
+12156	Helena, MT: Helena Regional Minimum delay: -26.0 Maximum delay: 28.0 Average delay: -7.6666665
+12206	Harlingen/San Benito, TX: Valley International Minimum delay: -25.0 Maximum delay: 53.0 Average delay: 1.3448275
+12264	Washington, DC: Washington Dulles International Minimum delay: -47.0 Maximum delay: 256.0 Average delay: 6.283708
+12266	Houston, TX: George Bush Intercontinental/Houston Minimum delay: -49.0 Maximum delay: 464.0 Average delay: 7.146718
+12278	Wichita, KS: Wichita Dwight D Eisenhower National Minimum delay: -29.0 Maximum delay: 186.0 Average delay: 17.347221
+12280	Idaho Falls, ID: Idaho Falls Regional Minimum delay: -14.0 Maximum delay: 103.0 Average delay: 17.11111
+12320	Wilmington, DE: New Castle Minimum delay: -15.0 Maximum delay: 5.0 Average delay: -5.0
+12402	Hilo, HI: Hilo International Minimum delay: -16.0 Maximum delay: 44.0 Average delay: 0.74
+12448	Jackson/Vicksburg, MS: Jackson Medgar Wiley Evers International Minimum delay: -25.0 Maximum delay: 97.0 Average delay: 6.4603176
+12478	New York, NY: John F. Kennedy International Minimum delay: -43.0 Maximum delay: 395.0 Average delay: 9.101152
+12758	Kona, HI: Kona International Airport at Keahole Minimum delay: -50.0 Maximum delay: 148.0 Average delay: 1.4134616
+12884	Lansing, MI: Capital Region International Minimum delay: -21.0 Maximum delay: 47.0 Average delay: 4.25
+12888	Laramie, WY: Laramie Regional Minimum delay: -8.0 Maximum delay: 161.0 Average delay: 26.142857
+12892	Los Angeles, CA: Los Angeles International Minimum delay: -69.0 Maximum delay: 462.0 Average delay: 2.5756676
+12896	Lubbock, TX: Lubbock Preston Smith International Minimum delay: -23.0 Maximum delay: 81.0 Average delay: 9.66
+12898	Latrobe, PA: Arnold Palmer Regional Minimum delay: -19.0 Maximum delay: 94.0 Average delay: 7.5555553
+12954	Long Beach, CA: Long Beach Airport Minimum delay: -57.0 Maximum delay: 121.0 Average delay: -0.43209878
+12982	Lihue, HI: Lihue Airport Minimum delay: -34.0 Maximum delay: 195.0 Average delay: 5.0
+12992	Little Rock, AR: Bill and Hillary Clinton Nat Adams Field Minimum delay: -31.0 Maximum delay: 205.0 Average delay: 14.67347
+13076	La Crosse, WI: La Crosse Regional Minimum delay: -28.0 Maximum delay: 68.0 Average delay: 17.916666
+13158	Midland/Odessa, TX: Midland International Minimum delay: -26.0 Maximum delay: 153.0 Average delay: 5.191781
+13184	Saginaw/Bay City/Midland, MI: MBS International Minimum delay: -18.0 Maximum delay: 81.0 Average delay: 17.375
+13198	Kansas City, MO: Kansas City International Minimum delay: -38.0 Maximum delay: 236.0 Average delay: 3.930723
+13204	Orlando, FL: Orlando International Minimum delay: -49.0 Maximum delay: 306.0 Average delay: 3.4086688
+13230	Harrisburg, PA: Harrisburg International Minimum delay: -19.0 Maximum delay: 124.0 Average delay: 14.9
+13232	Chicago, IL: Chicago Midway International Minimum delay: -44.0 Maximum delay: 206.0 Average delay: 2.953917
+13244	Memphis, TN: Memphis International Minimum delay: -36.0 Maximum delay: 188.0 Average delay: 7.136
+13256	Mission/McAllen/Edinburg, TX: McAllen Miller International Minimum delay: -19.0 Maximum delay: 142.0 Average delay: 19.297297
+13264	Medford, OR: Rogue Valley International - Medford Minimum delay: -35.0 Maximum delay: 84.0 Average delay: 3.6190476
+13290	Manhattan/Ft. Riley, KS: Manhattan Regional Minimum delay: -17.0 Maximum delay: 111.0 Average delay: 8.785714
+13296	Manchester, NH: Manchester-Boston Regional Minimum delay: -28.0 Maximum delay: 110.0 Average delay: 8.404255
+13342	Milwaukee, WI: General Mitchell International Minimum delay: -37.0 Maximum delay: 215.0 Average delay: 1.8613446
+13344	Muskegon, MI: Muskegon County Minimum delay: -19.0 Maximum delay: 81.0 Average delay: 16.25
+13360	Melbourne, FL: Melbourne International Minimum delay: -20.0 Maximum delay: 9.0 Average delay: -6.090909
+13388	Mammoth Lakes, CA: Mammoth Lakes Airport Minimum delay: -13.0 Maximum delay: 27.0 Average delay: 2.25
+13422	Mobile, AL: Mobile Regional Minimum delay: -18.0 Maximum delay: 100.0 Average delay: 4.3157897
+13476	Monterey, CA: Monterey Regional Minimum delay: -22.0 Maximum delay: 186.0 Average delay: 11.6
+13486	Missoula, MT: Missoula International Minimum delay: -32.0 Maximum delay: 7.0 Average delay: -9.363636
+13502	Montrose/Delta, CO: Montrose Regional Minimum delay: -24.0 Maximum delay: 137.0 Average delay: 10.0
+13796	Oakland, CA: Metropolitan Oakland International Minimum delay: -43.0 Maximum delay: 176.0 Average delay: 2.5298913
+13830	Kahului, HI: Kahului Airport Minimum delay: -39.0 Maximum delay: 272.0 Average delay: 1.9558011
+13930	Chicago, IL: Chicago O'Hare International Minimum delay: -42.0 Maximum delay: 529.0 Average delay: 15.896057
+13964	North Bend/Coos Bay, OR: Southwest Oregon Regional Minimum delay: 30.0 Maximum delay: 30.0 Average delay: 30.0
+13970	Kotzebue, AK: Ralph Wien Memorial Minimum delay: -14.0 Maximum delay: 1.4E-45 Average delay: -6.0
+14006	Paducah, KY: Barkley Regional Minimum delay: -26.0 Maximum delay: 15.0 Average delay: -9.571428
+14098	Newport News/Williamsburg, VA: Newport News/Williamsburg International Minimum delay: -20.0 Maximum delay: 16.0 Average delay: 2.5384614
+14100	Philadelphia, PA: Philadelphia International Minimum delay: -39.0 Maximum delay: 336.0 Average delay: 7.3231597
+14108	Peoria, IL: General Downing - Peoria International Minimum delay: -20.0 Maximum delay: 217.0 Average delay: 22.09091
+14122	Pittsburgh, PA: Pittsburgh International Minimum delay: -31.0 Maximum delay: 368.0 Average delay: 6.7894735
+14150	Pellston, MI: Pellston Regional Airport of Emmet County Minimum delay: -15.0 Maximum delay: 5.0 Average delay: -8.75
+14222	Pago Pago, TT: Pago Pago International Minimum delay: -27.0 Maximum delay: 1.4E-45 Average delay: -27.0
+14252	Pasco/Kennewick/Richland, WA: Tri Cities Minimum delay: -14.0 Maximum delay: 115.0 Average delay: 24.133333
+14254	Ponce, PR: Mercedita Minimum delay: -28.0 Maximum delay: 1.4E-45 Average delay: -11.428572
+14256	Petersburg, AK: Petersburg James A Johnson Minimum delay: -27.0 Maximum delay: 19.0 Average delay: -4.8333335
+14262	Palm Springs, CA: Palm Springs International Minimum delay: -46.0 Maximum delay: 170.0 Average delay: 8.935185
+14288	Pueblo, CO: Pueblo Memorial Minimum delay: -15.0 Maximum delay: 59.0 Average delay: 7.3333335
+14492	Raleigh/Durham, NC: Raleigh-Durham International Minimum delay: -32.0 Maximum delay: 165.0 Average delay: 7.0
+14520	Rhinelander, WI: Rhinelander/Oneida County Minimum delay: -20.0 Maximum delay: 49.0 Average delay: 3.142857
+14524	Richmond, VA: Richmond International Minimum delay: -29.0 Maximum delay: 175.0 Average delay: 3.231405
+14570	Reno, NV: Reno/Tahoe International Minimum delay: -40.0 Maximum delay: 149.0 Average delay: 4.1282053
+14574	Roanoke, VA: Roanoke Regional/Woodrum Field Minimum delay: -22.0 Maximum delay: 109.0 Average delay: 3.0833333
+14576	Rochester, NY: Greater Rochester International Minimum delay: -28.0 Maximum delay: 163.0 Average delay: 10.779411
+14588	Roswell, NM: Roswell International Air Center Minimum delay: -15.0 Maximum delay: 10.0 Average delay: -4.375
+14674	Santa Fe, NM: Santa Fe Municipal Minimum delay: -12.0 Maximum delay: 36.0 Average delay: 13.111111
+14696	South Bend, IN: South Bend International Minimum delay: -26.0 Maximum delay: 245.0 Average delay: 26.0
+14698	San Luis Obispo, CA: San Luis County Regional Minimum delay: -25.0 Maximum delay: 123.0 Average delay: 2.425
+14730	Louisville, KY: Louisville International-Standiford Field Minimum delay: -23.0 Maximum delay: 113.0 Average delay: 5.72043
+14794	St. George, UT: St George Municipal Minimum delay: -13.0 Maximum delay: 27.0 Average delay: -0.78571427
+14814	Shreveport, LA: Shreveport Regional Minimum delay: -20.0 Maximum delay: 63.0 Average delay: 0.5849057
+14828	Sitka, AK: Sitka Rocky Gutierrez Minimum delay: -19.0 Maximum delay: 81.0 Average delay: 8.333333
+14842	San Angelo, TX: San Angelo Regional/Mathis Field Minimum delay: -9.0 Maximum delay: 35.0 Average delay: 4.0
+14908	Santa Ana, CA: John Wayne Airport-Orange County Minimum delay: -42.0 Maximum delay: 127.0 Average delay: -2.0853243
+14952	Springfield, IL: Abraham Lincoln Capital Minimum delay: -23.0 Maximum delay: 51.0 Average delay: 3.0
+14960	Wichita Falls, TX: Sheppard AFB/Wichita Falls Municipal Minimum delay: -8.0 Maximum delay: 200.0 Average delay: 28.5
+14986	Sarasota/Bradenton, FL: Sarasota/Bradenton International Minimum delay: -25.0 Maximum delay: 178.0 Average delay: -0.7647059
+15008	St. Cloud, MN: St. Cloud Regional Minimum delay: -4.0 Maximum delay: 76.0 Average delay: 24.333334
+15016	St. Louis, MO: Lambert-St. Louis International Minimum delay: -32.0 Maximum delay: 383.0 Average delay: 6.9751244
+15024	Charlotte Amalie, VI: Cyril E King Minimum delay: -39.0 Maximum delay: 167.0 Average delay: 6.48
+15048	Sioux City, IA: Sioux Gateway/Col. Bud Day Field Minimum delay: -14.0 Maximum delay: 18.0 Average delay: 0.6666667
+15070	Newburgh/Poughkeepsie, NY: Stewart International Minimum delay: -16.0 Maximum delay: 189.0 Average delay: 27.428572
+15096	Syracuse, NY: Syracuse Hancock International Minimum delay: -25.0 Maximum delay: 110.0 Average delay: 10.971429
+15304	Tampa, FL: Tampa International Minimum delay: -47.0 Maximum delay: 513.0 Average delay: 4.1045957
+15356	Trenton, NJ: Trenton Mercer Minimum delay: -17.0 Maximum delay: 112.0 Average delay: 21.76
+15370	Tulsa, OK: Tulsa International Minimum delay: -32.0 Maximum delay: 140.0 Average delay: 4.7251906
+15376	Tucson, AZ: Tucson International Minimum delay: -39.0 Maximum delay: 167.0 Average delay: 8.117647
+15380	Traverse City, MI: Cherry Capital Minimum delay: -28.0 Maximum delay: 223.0 Average delay: 47.333332
+15412	Knoxville, TN: McGhee Tyson Minimum delay: -21.0 Maximum delay: 239.0 Average delay: 15.189655
+15582	Vernal, UT: Vernal Regional Minimum delay: -13.0 Maximum delay: 19.0 Average delay: 2.0
+15624	Valparaiso, FL: Northwest Florida Regional Minimum delay: -24.0 Maximum delay: 79.0 Average delay: -2.0833333
+16218	Yuma, AZ: Yuma MCAS/Yuma International Minimum delay: -12.0 Maximum delay: 24.0 Average delay: 2.2
